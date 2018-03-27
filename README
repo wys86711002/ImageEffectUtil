@@ -1,0 +1,26 @@
+色相　饱和度　明度
+1.Matrix 颜色矩阵　变换矩阵
+2.Xfermode　
+3.piexl
+
+倒影
+
+drawMesh
+
+
+
+硬件加速的优点和缺点
+    硬件加速能能够使用GPU来加速2D图形的渲染操作，但是硬件加速并不能支持所有的渲染操作。
+    针对自定义的View有可能会出现渲染错位的情况，如果有自定义的View，在开启硬件加速的设备上操作，
+    出现渲染问题，我们可以关闭硬件加速。
+硬件加速的四种级别
+a.application
+android:hardwareAccelerated="true"
+b.activity
+android:hardwareAccelerated="true"
+c.window
+getWindow().setFlags(
+        WindowManager.LayoutParams.FLAG_HARDWARE_ACCELERATED,
+        WindowManager.LayoutParams.FLAG_HARDWARE_ACCELERATED);
+d.view
+myView.setLayerType(View.LAYER_TYPE_SOFTWARE, null);

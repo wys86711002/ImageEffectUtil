@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ImageEffectUtils</string>
+    <string name="title_activity_effect_view">EffectViewActivity</string>
+    <string name="title_activity_scale_image_view">ScaleImageViewActivity</string>
+</resources>
